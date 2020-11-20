@@ -1,0 +1,124 @@
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body {
+    background: #f9f7cf;
+}
+
+nav {
+    background: #aaaaaa;
+    position:fixed;
+    height: 60px;
+    width: 100%;
+
+}
+
+.lady img {
+    width: 350px;
+}
+
+
+
+/*Zsófi*/
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+.opinions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    }
+
+   
+    .opinions img {
+        max-width:90%;
+        max-height: 90%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation: moveInLeft 1s ease-out;
+    }
+
+    .opinions img:hover {
+        background-color: #aaaaaa;
+        color: #fff;
+        box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.15);
+        transform: scale( 1.1);
+    }
+
+    .opinion-name {
+        position: relative;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+    }
+
+    .opinions p {
+        animation: moveInRight 1s ease-out;
+        max-width:90%;
+        max-height: 90%;
+        text-align: justify;
+        
+
+    }
+
+    /*Zsófi vége*/
+
+   
+    .programs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+        footer {
+            background: #aaaaaa;
+        }
